@@ -1,0 +1,33 @@
+{
+   "browser_action": {
+      "default_icon": "icons/icon19.png",
+      "default_popup": "button.html"
+   },
+   "content_scripts": [ {
+      "css": [ "css/theme.default.min.css", "css/popup.css" ],
+      "js": [ "js/jquery.min.js", "js/jquery.tablesorter.combined.min.js", "js/popup.js", "js/google-analytics-bundle.js" ],
+      "matches": [ "*://www.alibaba.com/*" ],
+      "run_at": "document_start"
+   } ],
+   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+   "default_locale": "en",
+   "description": "Ali Tracker is a Price Search Tool for Alibaba.com so you can get the best Prices for Sourcing your Products",
+   "homepage_url": "http://www.alitracker.com",
+   "icons": {
+      "128": "icons/icon128.png",
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAiFHJQG9o/lqvtq3NUvw4FgEUOq9ClZ2wMtdJhjfzl7VJvPYF14cBKjxv036EVh83b72EBBAt7ZVz9o0zcqVstwMm0J6soBEpjI7oiX/iORv4R51MLYJ8BHAPll8ake4cHKt8nSNhFYld6duVg7H5xipAoUmtWdqh0/Vnd0qIF4h2ssDwbSUWqqfVF/3vkovdJnKCbzHUx2vzCV+BDFxFPJx0mV0/om18F79HwtypMmaN4q+p/XRtbLGxrTHjpTG3+e5yebrFOZrwcwVqqn9JPED5kJuauzfQToivgoflB0BSuQ6VuVywb3nGRodAk3fpVhIHhvUwgzdipRoFsDOVWQIDAQAB",
+   "manifest_version": 2,
+   "name": "ALI Tracker - Alibaba.com Searching Made Easy",
+   "options_ui": {
+      "chrome_style": true,
+      "page": "options.html"
+   },
+   "permissions": [ "tabs", "storage", "activeTab", "unlimitedStorage", "*://www.alibaba.com/*", "*://www.google-analytics.com/*", "*://www.alitracker.com/*" ],
+   "short_name": "ALI Tracker",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.6",
+   "web_accessible_resources": [ "popup.html", "img/*.png", "js/*.js" ]
+}

@@ -1,0 +1,198 @@
+section.alitracker-popup {
+    position: fixed;
+    z-index: 100000;
+    right: 10px;
+    top: 10px;
+    font-size: 12px;
+    font-family: Arial,sans-serif;
+    min-height: 300px;
+    min-width: 300px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+
+    color: #4C4C4C;
+    max-height: 90%;
+
+
+
+    background-color: #b0bec5;
+
+    min-width: 476px;
+    display:none;
+
+}
+
+section.alitracker-popup  *{
+    box-sizing: content-box;
+}
+
+.alitracker-popup section {
+    display: block;
+}
+
+
+
+table {
+    background-color: white;
+    margin:0px !important;
+    padding:0px;
+}
+.table thead {
+}
+
+.tablesorter-default .header,
+.tablesorter-default .tablesorter-header {
+    background-color: #B0BEC5;
+}
+.tablesorter-default th,
+.tablesorter-default thead td  {
+    color: #737F86 !important;
+    font-weight: normal !important;
+}
+
+.tablesorter-default tr.odd>td {
+    background-color: #F9F9F9 !important;
+}
+.tablesorter-default tr.even>td {
+    background-color: #F5F5F5 !important;
+}
+
+.img-preview {
+    position:absolute;
+    left: -330px;
+    top: 105px;
+    display:none;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+.img-preview img {
+    width: 150%;
+}
+.overlay-preview {
+    position:fixed;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: #EDEDED;
+}
+
+.table td {
+    padding: 5px !important;
+    padding-right: 10px !important;
+    vertical-align: middle !important;
+    max-width: 250px;
+    text-overflow: ellipsis;
+    border: none !important;
+    font-size:12px;
+    overflow: hidden;
+}
+
+.table td:first-child {
+    padding: 0px !important;
+    max-width: 100px;
+    overflow: hidden;
+}
+
+.table td:first-child img {
+    max-width: 100px;
+}
+
+.table tbody td:nth-child(2) {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+td {
+    min-width: 35px;
+}
+
+.table td:first-child {
+
+}
+
+
+.alitracker-popup label {
+    line-height:20px !important;
+}
+.checkbox {
+    margin:0px;
+}
+
+[class*='col-'] {
+    padding:0px;
+    margin:0px;
+}
+
+label {
+    font-size: 15px;
+}
+label input {
+    width: 18px;
+    height: 18px;
+    vertical-align: sub;
+}
+.form-control {
+    width: 80px;
+}
+
+
+::-webkit-scrollbar-track {
+    background-color: #FFF;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    background-color: #FFF;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #D9D9D9;
+}
+
+
+.tablesorter-filter-row {
+    display:none;
+}
+
+
+
+.form-control {
+    padding: 4px !important;
+    height: auto !important;
+    max-width:100px;
+}
+
+.row {
+    padding:10px;
+}
+
+/* wrapper of table 2 */
+.wrapper {
+    position: relative;
+    padding: 0 5px;
+    height:550px;
+    overflow-y: scroll
+}
+
+/* Magnific popup */
+#popup {
+    position: relative;
+    background: #FFF;
+    padding: 20px;
+    width: auto;
+    max-width: 500px;
+    margin: 20px auto;
+}
+/* Since the popup has a 20px margin, we need to adjust the wrapper position
+Note:
+ this is only required because we aren't actually attaching the sticky header
+ to the #popup, instead we're attaching it to the .mfp-wrap because that
+ element scrolls instead of the window
+*/
+#popup .tablesorter-sticky-wrapper {
+    margin-left: 20px;
+    margin-top: -20px;
+}
